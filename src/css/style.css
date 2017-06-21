@@ -215,7 +215,7 @@ input::-moz-focus-inner {
 * {
   box-sizing: border-box;
 }
-html {
+/*html {
   font-size: 62.5%;
 }
 body {
@@ -224,8 +224,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
-}
-h1 {
+}*/
+/*h1 {
   font-family: 'blanchcaps_inline', sans-serif;
   text-align: center;
   font-weight: normal;
@@ -246,7 +246,7 @@ h2 {
 }
 h3 {
   font-size: 3rem;
-}
+}*/
 header.top {
   text-align: center;
 }
