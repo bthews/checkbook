@@ -26,7 +26,7 @@ class App extends React.Component {
 	}
 
 	syncWithFirebase() {
-		this.ref = base.syncState(`${this.props.params.storeId}/fishes`,
+		this.ref = base.syncState(`${this.props.match.params.storeId}/fishes`,
 			{
 				context: this,
 				state: 'fishes',
@@ -42,7 +42,7 @@ class App extends React.Component {
 
 	componentWillMount() {
 		// this runs right before the <App> is rendered
-		this.ref = base.syncState(`${this.props.params.storeId}/fishes`,
+		this.ref = base.syncState(`${this.props.match.params.storeId}/fishes`,
 			{
 				context: this,
 				state: 'fishes',
@@ -53,8 +53,8 @@ class App extends React.Component {
 			  }
 			});
 
-		// check if there is any order in localStorage
-		const localStorageRef = localStorage.getItem(`order-${this.props.params.storeId}`);
+		//check if there is any order in localStorage
+		const localStorageRef = localStorage.getItem(`order-${this.props.match.params.storeId}`);
 		if(localStorageRef) {
 			//update our app component's order state
 			this.setState({
@@ -68,21 +68,21 @@ class App extends React.Component {
 	}
 
 	componentWillUpdate(nextProps, nextState) {
-		localStorage.setItem(`order-${this.props.params.storeId}`,
+		localStorage.setItem(`order-${this.props.match.params.storeId}`,
 			JSON.stringify(nextState.order));
 	}
 
 	loadSamples() {
 		// console.log(sampleFishes);
-		// let immediatelyAvailableReference = base.push(`${this.props.params.storeId}/fishes`, {
-	 //    data: {name: sampleFishes['fish1'].name, desc: sampleFishes['fish1'].desc, price: sampleFishes['fish1'].price},
-	 //    ".priority": 0 - Date.now(),
-	 //    then(err){
-	 //      if(!err){
-	 //        //Router.transitionTo('dashboard');
-	 //      }
-	 //    }
-	 //  });
+		let immediatelyAvailableReference = base.push(`${this.props.match.params.storeId}/fishes`, {
+	    data: {name: sampleFishes['fish1'].name, desc: sampleFishes['fish1'].desc, price: sampleFishes['fish1'].price},
+	    ".priority": 0 - Date.now(),
+	    then(err){
+	      if(!err){
+	        //Router.transitionTo('dashboard');
+	      }
+	    }
+	  });
 		this.setState({
 			fishes: sampleFishes
 		});
@@ -158,7 +158,7 @@ class App extends React.Component {
 }
 
 App.propTypes = {
-	params: React.PropTypes.object.isRequired,
+	params: React.PropTypes.object,
 	pricer: React.PropTypes.string
 };
 
