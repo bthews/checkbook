@@ -10,7 +10,7 @@ class AddFishForm extends React.Component {
 		event.preventDefault();
 		const fish = {
 			name: this.fishName.value,
-			price: parseInt(this.fishPrice.value),
+			price: parseInt(this.fishPrice.value, 10),
 			status: this.fishStatus.value,
 			description: this.fishDescription.value,
 			image: this.fishImage.value,
