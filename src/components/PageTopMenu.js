@@ -1,9 +1,6 @@
 import React from 'react';
 
 class PageTopMenu extends React.Component {
-	constructor() {
-		super();
-	}
 	
 	render() {
     var style = {
@@ -18,7 +15,7 @@ class PageTopMenu extends React.Component {
             {/* DOC: Apply "dropdown-hoverable" className after below "dropdown" and remove data-toggle="dropdown" data-hover="dropdown" data-close-others="true" attributes to enable hover dropdown mode */}
             {/* DOC: Remove "dropdown-hoverable" and add data-toggle="dropdown" data-hover="dropdown" data-close-others="true" attributes to the below A element with dropdown-toggle className */}
             <li className="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
-                <a href="javascript:;" className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                <a href="#" className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                     <i className="icon-bell"></i>
                     <span className="badge badge-default"> 7 </span>
                 </a>
@@ -31,7 +28,7 @@ class PageTopMenu extends React.Component {
                     <li>
                         <ul className="dropdown-menu-list scroller" style={style} data-handle-color="#637283">
                             <li>
-                                <a href="javascript:;">
+                                <a href="#">
                                     <span className="time">just now</span>
                                     <span className="details">
                                         <span className="label label-sm label-icon label-success">
@@ -40,7 +37,7 @@ class PageTopMenu extends React.Component {
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:;">
+                                <a href="#">
                                     <span className="time">3 mins</span>
                                     <span className="details">
                                         <span className="label label-sm label-icon label-danger">
@@ -49,7 +46,7 @@ class PageTopMenu extends React.Component {
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:;">
+                                <a href="#">
                                     <span className="time">10 mins</span>
                                     <span className="details">
                                         <span className="label label-sm label-icon label-warning">
@@ -58,7 +55,7 @@ class PageTopMenu extends React.Component {
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:;">
+                                <a href="#">
                                     <span className="time">14 hrs</span>
                                     <span className="details">
                                         <span className="label label-sm label-icon label-info">
@@ -67,7 +64,7 @@ class PageTopMenu extends React.Component {
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:;">
+                                <a href="#">
                                     <span className="time">2 days</span>
                                     <span className="details">
                                         <span className="label label-sm label-icon label-danger">
@@ -76,7 +73,7 @@ class PageTopMenu extends React.Component {
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:;">
+                                <a href="#">
                                     <span className="time">3 days</span>
                                     <span className="details">
                                         <span className="label label-sm label-icon label-danger">
@@ -85,7 +82,7 @@ class PageTopMenu extends React.Component {
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:;">
+                                <a href="#">
                                     <span className="time">4 days</span>
                                     <span className="details">
                                         <span className="label label-sm label-icon label-warning">
@@ -94,7 +91,7 @@ class PageTopMenu extends React.Component {
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:;">
+                                <a href="#">
                                     <span className="time">5 days</span>
                                     <span className="details">
                                         <span className="label label-sm label-icon label-info">
@@ -103,7 +100,7 @@ class PageTopMenu extends React.Component {
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:;">
+                                <a href="#">
                                     <span className="time">9 days</span>
                                     <span className="details">
                                         <span className="label label-sm label-icon label-danger">
@@ -119,7 +116,7 @@ class PageTopMenu extends React.Component {
             {/* BEGIN USER LOGIN DROPDOWN */}
             {/* DOC: Apply "dropdown-dark" className after below "dropdown-extended" to change the dropdown styte */}
             <li className="dropdown dropdown-user">
-                <a href="javascript:;" className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                <a href="#" className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                     <img alt="" className="img-circle" src="../assets/layouts/layout/img/avatar3_small.jpg" />
                     <span className="username username-hide-on-mobile"> Nick </span>
                     <i className="fa fa-angle-down"></i>
@@ -160,7 +157,7 @@ class PageTopMenu extends React.Component {
             {/* BEGIN QUICK SIDEBAR TOGGLER */}
             {/* DOC: Apply "dropdown-dark" className after below "dropdown-extended" to change the dropdown styte */}
             <li className="dropdown dropdown-quick-sidebar-toggler">
-                <a href="javascript:;" className="dropdown-toggle">
+                <a href="#" className="dropdown-toggle">
                     <i className="icon-logout"></i>
                 </a>
             </li>

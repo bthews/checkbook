@@ -63,13 +63,13 @@ class PageSidebar extends React.Component {
                     {/* DOC: Apply "sidebar-search-bordered" className the below search form to have bordered search box */}
                     {/* DOC: Apply "sidebar-search-bordered sidebar-search-solid" className the below search form to have bordered & solid search box */}
                     <form className="sidebar-search  " action="page_general_search_3.html" method="POST">
-                        <a href="javascript:;" className="remove">
+                        <a href="#" className="remove">
                             <i className="icon-close"></i>
                         </a>
                         <div className="input-group">
                             <input type="text" className="form-control" placeholder="Search..."/>
                             <span className="input-group-btn">
-                                <a href="javascript:;" className="btn submit">
+                                <a href="#" className="btn submit">
                                     <i className="icon-magnifier"></i>
                                 </a>
                             </span>
@@ -78,7 +78,7 @@ class PageSidebar extends React.Component {
                     {/* END RESPONSIVE QUICK SEARCH FORM */}
                 </li>
                 <li className="nav-item start active open">
-                    <a href="javascript:;" className="nav-link nav-toggle">
+                    <a href="#" className="nav-link nav-toggle">
                         <i className="icon-home"></i>
                         <span className="title">Accounts</span>
                         <span className="selected"></span>
@@ -112,28 +112,28 @@ class PageSidebar extends React.Component {
                     
                 </li>
                 <li className="nav-item  ">
-                    <a href="javascript:;" className="nav-link nav-toggle">
+                    <a href="#" className="nav-link nav-toggle">
                         <i className="icon-puzzle"></i>
                         <span className="title">Transactions</span>
                         <span className="arrow"></span>
                     </a>
                 </li>
                 <li className="nav-item  ">
-                    <a href="javascript:;" className="nav-link nav-toggle">
+                    <a href="#" className="nav-link nav-toggle">
                         <i className="icon-settings"></i>
                         <span className="title">Reports</span>
                         <span className="arrow"></span>
                     </a>
                 </li>
                 <li className="nav-item  ">
-                    <a href="javascript:;" className="nav-link nav-toggle">
+                    <a href="#" className="nav-link nav-toggle">
                         <i className="icon-bulb"></i>
                         <span className="title">Bills</span>
                         <span className="arrow"></span>
                     </a>
                 </li>
                 <li className="nav-item  ">
-                    <a href="javascript:;" className="nav-link nav-toggle">
+                    <a href="#" className="nav-link nav-toggle">
                         <i className="icon-briefcase"></i>
                         <span className="title">Budgets</span>
                         <span className="arrow"></span>

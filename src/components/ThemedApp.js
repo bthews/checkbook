@@ -1,6 +1,5 @@
 import React from 'react';
-import { Switch, Route, Link } from 'react-router-dom'
-//import { getFunName } from '../helpers';
+import { Switch, Route } from 'react-router-dom'
 import StorePicker from './StorePicker';
 import App from '../components/App'
 import NotFound from '../components/NotFound'
@@ -8,22 +7,6 @@ import PageSidebar from './PageSidebar';
 import PageTopMenu from './PageTopMenu';
 
 class ThemedApp extends React.Component {
-
-	constructor() {
-		super();
-		this.goToStore = this.goToStore.bind(this);
-	}
-
-
-	goToStore(event) {
-		event.preventDefault();
-		console.log("You changed the URL");
-		//first grab the text from the box
-		const storeId = this.storeInput.value;
-		//second, move from / to /store/storeId
-        //<Link to={/store/${storeId}}>
-		//this.context.router.transitionTo(`/store/${storeId}`);
-	}
 
 	render() {
 		return (
@@ -35,14 +18,14 @@ class ThemedApp extends React.Component {
               {/* BEGIN LOGO */}
               <div className="page-logo">
                   <a href="index.html">
-                      <img src="./assets/layouts/layout/img/logo.png" alt="logo" className="logo-default" /> </a>
+                      <img src="/assets/layouts/layout/img/logo.png" alt="logo" className="logo-default" /> </a>
                   <div className="menu-toggler sidebar-toggler">
                       <span></span>
                   </div>
               </div>
               {/* END LOGO */}
               {/* BEGIN RESPONSIVE MENU TOGGLER */}
-              <a href="javascript:;" className="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+              <a href="#" className="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
                   <span></span>
               </a>
               {/* END RESPONSIVE MENU TOGGLER */}

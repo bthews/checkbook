@@ -1,8 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom'
 import { getFunName } from '../helpers';
-import PageSidebar from './PageSidebar';
-import PageTopMenu from './PageTopMenu';
 
 class StorePicker extends React.Component {
 

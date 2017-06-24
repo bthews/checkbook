@@ -5,7 +5,7 @@ import Inventory from './Inventory';
 import sampleFishes from '../sample-fishes';
 import Fish from './Fish';
 import base from '../base';
-var database = require('firebase/database');
+//var database = require('firebase/database');
 
 class App extends React.Component {
 	constructor() {
@@ -74,15 +74,15 @@ class App extends React.Component {
 
 	loadSamples() {
 		// console.log(sampleFishes);
-		let immediatelyAvailableReference = base.push(`${this.props.match.params.storeId}/fishes`, {
-	    data: {name: sampleFishes['fish1'].name, desc: sampleFishes['fish1'].desc, price: sampleFishes['fish1'].price},
-	    ".priority": 0 - Date.now(),
-	    then(err){
-	      if(!err){
-	        //Router.transitionTo('dashboard');
-	      }
-	    }
-	  });
+		// let immediatelyAvailableReference = base.push(`${this.props.match.params.storeId}/fishes`, {
+	 //    data: {name: sampleFishes['fish1'].name, desc: sampleFishes['fish1'].desc, price: sampleFishes['fish1'].price},
+	 //    ".priority": 0 - Date.now(),
+	 //    then(err){
+	 //      if(!err){
+	 //        //Router.transitionTo('dashboard');
+	 //      }
+	 //    }
+	 //  });
 		this.setState({
 			fishes: sampleFishes
 		});
